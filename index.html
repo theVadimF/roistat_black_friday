@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чёрная Пятница</title>
+    <link rel="stylesheet" href="./js/lib/intl-tel-input/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="overflow-wrap">
+
+      <div class="outer-wrap main">
+        <header class="header" id="header">
+          <div class="header_inner">
+            <a href="https://roistat.com/ru/" class="header__logo">
+              <img src="./img/roistat_logo_white.svg" alt="" class="header__logo_img">
+            </a>
+            <button class="mobile_menu_open" id="mobile_menu_open">
+              <img src="./img/mobile_menu.svg" alt="" class="menu_icon">
+            </button>
+          </div>
+          <div class="header__links">
+            <a href="" class="header__link">Наши предложения</a>
+            <a href="" class="header__link">Цены</a>
+          </div>
+        </header>
+
+        <div class="hero_block inner-wrap">
+          <div class="hanging_heading">
+            <div class="line __left"></div>
+            <h1 class="heading">Чeрная</h1>
+            <div class="line __right"></div>
+          </div>
+          <div class="with_tag">
+            <h1 class="heading __purple">Пятница</h1>
+            <div class="sale_tag_wrap">
+              <img src="./img/sale_tag.svg" alt="" class="sale_tag">
+              <img src="./img/sale_tag_ring_back.svg" alt="" class="tag_back_ring">
+            </div>
+          </div>
+        </div>
+
+        <img class="bg_blob" src="./img/purple_blob.webp" alt="">
+        <img src="./img/star.svg" alt="" class="bg_star"> 
+      </div>
+
+      <div class="info_block">
+        <div class="outer-wrap">
+          <div class="text_block inner-wrap">
+            <div class="top">
+              <p class="info_text">Воспользуйтесь выгодными предложениями  от Roistat в ноябре*</p>
+              <button class="purple_button __arrow" id="open_form_btn">Получить выгоду</button>
+            </div>
+            <p class="subtext">
+              *Акция не распространяется на подключение опций, лимитов, 
+              которые были подключены ранее до 1.11.2023 Количество предложений 
+              ограничено
+            </p>
+          </div>
+        </div>
+        <div class="lines">
+          <div class="line">
+            <div class="line_img_wrapper"></div>
+          </div>
+          <div class="line __yellow">
+            <div class="line_img_wrapper"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="form_popup">
+      <div class="bg"></div>
+      <div class="popup_form">
+        <div class="top">
+          <h1 class="form_heading">Регистрация</h1>
+          <button class="close_form" id="close_form">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.0014 8L16 14L10 8L8 10L14 16L8 22L10 24L16 18L22.0014 24L24.0014 22L18.0014 16L24.0014 10L22.0014 8Z" fill="#F0F0F0"/>
+            </svg>
+          </button>
+        </div> 
+        <form class="form_block">
+          <div class="fields">
+            <div class="field_block">
+              <div class="field_wrap">
+                <input type="text" class="form_input __name" placeholder="Имя" name="name" id="name_input">
+              </div>
+              <p class="field_error __name"></p>
+            </div>
+            <div class="field_block">
+              <div class="field_wrap">
+                <input type="text" class="form_input __site" placeholder="Сайт компании" name="website" id="website_input">
+              </div>
+              <p class="field_error __site"></p>
+            </div>
+            <div class="field_block ">
+              <div class="field_wrap">
+                <input type="text" class="form_input __phone" id="phone_input" placeholder="Телефон" name="phone">
+              </div>
+              <p class="field_error __phone"></p>
+            </div>
+          </div>
+          <button type="button" class="purple_button __submit_btn" id="submit_form">Получить код</button>
+          <p class="form_status"></p>
+          <div class="checkbox_wrap">
+            <input type="checkbox" class="checkbox_input" id="legal_checkbox" name="legal">
+            <label for="legal_checkbox" class="checkbox_box"></label>
+            <label for="legal_checkbox" class="checkbox_label">
+              Отправляя сведения через электронную форму, вы даете согласие на обработку персональных данных, 
+              в том числе сбор, хранение и передачу третьим лицам представленной вами информации на условиях 
+              <a href="">Политики обработки персональных данных</a>.
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </body>
+  <script src="./js/lib/intl-tel-input/js/intlTelInput.min.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/script.js"></script>
+</html>
